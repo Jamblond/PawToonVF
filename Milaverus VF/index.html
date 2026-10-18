@@ -1,0 +1,364 @@
+<!--
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠞⠙⣆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⠃⠀⠀⠘⣇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⢠⠏⠉⠢⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠃⠀⠀⠀⠀⠹⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⢸⠀⠀⠀⠘⢦⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡏⠀⠀⠀⠀⠀⠀⢻⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⡇⠀⠀⠀⠀⢶⣷⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡼⠀⠀⠀⠀⠀⠀⠀⠈⣧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⡇⠀⠀⠀⠀⠸⣌⠙⠲⠤⠴⠶⠒⠛⠛⠓⠲⣴⠃⠀⠀⠀⠀⢠⢷⠀⠀⠸⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⢸⠇⠀⠀⢠⡀⠀⠙⢦⣀⠀⠀⠀⠀⠀⠀⢰⣟⢦⠀⠀⠀⠀⠀⡞⢸⡆⠀⠀⣷⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠈⡇⠀⠀⢸⢳⡀⠠⣾⠋⠀⠀⠀⠀⠀⠀⠀⠈⠉⠀⠀⠀⠀⠸⣇⠀⡇⠀⠀⢸⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⡇⠀⠀⠸⡀⡷⠀⣏⡴⡇⠀⢰⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⢦⡇⠀⠀⣸⢃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⡇⠀⠀⠀⢿⠁⠸⠏⠀⢱⣠⠏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠀⠀⣠⠟⡿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⢀⢳⡄⠀⠀⠀⠀⠀⠀⠀⠈⠟⠀⠀⠀⠀⠀⠀⢠⣴⣾⣷⣶⣤⡀⠀⠀⠈⠁⡴⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠈⢿⠻⣦⡀⠀⠀⣠⣴⣶⣦⣄⠀⠀⠀⠀⠀⢰⡿⠋⠉⠛⠻⣿⣿⡆⣀⣀⣀⣙⣦⡤⠖⠛⣉⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠈⠳⣄⠁⠀⣼⣿⠟⠋⠉⠙⠷⣤⣠⠤⠤⠛⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣰⠏⠀⠀⣈⣻⡏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⣰⣏⣤⠤⠛⠛⠀⠀⠀⠀⠀⠈⠰⠶⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⠞⠹⠦⢤⣄⣠⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⢀⣠⣼⡗⠶⣤⡀⠀⠀⠀⠀⠀⠀⢠⣀⣠⣤⣤⠆⠀⠀⠀⠀⠀⠀⠈⠛⢦⣄⠀⣠⡴⢿⣟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⣰⠋⠀⣀⣷⣀⣽⣹⡀⠀⠀⠀⠀⠀⠀⠹⣅⠀⢸⡆⢀⣠⣄⠀⢠⠤⠖⠚⢉⣿⠀⢿⣀⠀⠈⠛⢦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⣰⠃⠀⠀⣿⣽⢻⣿⣿⡧⣶⢒⡆⠑⣒⣴⡤⣽⣶⡾⠒⠋⠁⢈⣷⡾⠀⠀⠀⠺⣏⠙⠛⠉⠉⠻⣶⣄⡙⠳⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⢀⡏⠀⠀⠀⠀⡾⢿⢙⣿⢿⡋⠸⣷⣋⠉⠉⠉⠉⢁⣀⠄⣲⠾⠋⠀⢁⣤⠤⠶⠶⠿⠶⢶⣶⠾⠃⠀⠙⢿⣦⠈⠙⠳⢤⣀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⣸⠀⠀⠀⠀⠀⠛⢛⡟⠁⠈⢧⠀⢹⡈⠉⠉⠀⠀⣀⡴⠚⠁⢀⡤⠚⠁⠀⠀⠀⠀⠀⠀⠈⣿⣦⡀⠀⠀⠀⠀⠀⠀⠀⠀⢈⣹⠆⠀⠀⠀⠀⠀⠀
+⠀⠀⢀⡏⠀⠀⠀⠀⠀⢠⠏⠀⠀⠀⠸⣄⠀⠙⠲⠶⠖⠋⠁⠀⢀⡴⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠻⣧⣤⣤⣤⣤⡤⠴⠖⠛⠋⠁⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⣸⠃⠀⠀⠀⠀⠀⡞⢶⡶⠒⠃⠀⠙⢦⡀⠀⠀⠀⣀⡤⠞⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠳⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⢀⡏⠀⠀⠀⠀⠀⠐⡇⠀⠉⡗⠀⠀⠀⠀⠉⠛⠛⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠳⣆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⢷⡀
+⠀⣼⠀⠀⠀⠀⠀⠀⠀⡇⠀⢸⢀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠻⣦⡀⠀⠀⠀⠀⠀⠀⣰⠟⡆⠁
+⢰⠇⠀⠀⠀⠀⠀⠀⠀⢸⠀⢸⣾⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣸⠃⠙⠳⢤⣀⠀⠀⠀⣀⡀⠀⠀⠀⠀⠀⠀⠻⡄⠀⠀⠀⢠⡞⠁⠀⣷⠀
+⢸⡄⠀⠀⠀⠀⠀⠀⠀⡎⠀⣼⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠏⠀⠀⠀⠀⠈⠙⣷⠟⠉⠀⠀⠀⠀⠀⠀⠀⣰⠃⠀⠀⣰⠏⠀⠀⠀⡿⠀
+⠀⠻⣄⡀⠀⠀⠀⠀⠘⣡⠞⠁⣻⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⡟⠀⠀⠀⠀⠀⢀⡾⠁⠀⠀⠀⠀⠀⠀⠀⠀⡼⠃⠀⢀⡾⠁⠀⠀⠀⠀⡇⠀
+⠀⠀⠈⠛⢦⣠⡤⠴⠚⠃⠀⠀⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⣿⡀⠀⠀⠀⢀⡞⠀⠀⠀⠀⠀⠀⠀⠀⢠⠞⠁⠀⡰⠏⠀⠀⠀⠀⠀⢸⠃⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⠏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠸⣧⡤⠴⢶⡟⠀⠀⠀⠀⠀⠀⠀⣠⣔⣁⣠⠴⠛⠁⠀⠀⠀⠀⠀⢠⡏⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡎⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠻⢦⣀⡞⠀⠀⠀⠀⠀⠀⣠⠞⠋⠉⠉⠀⠀⠀⠀⠀⠀⠀⠀⢠⠟⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⡴⠞⠋⠀⠀⠀⠀⠀⣠⠞⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣰⠏⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣸⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⡞⠁⠀⠀⠀⠀⠀⠀⠀⣼⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠾⠓⡿⠁⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣥⡆⠀⠀⡀⠀⠀⠀⣰⠟⣛⠦⣤⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⣠⠞⠁⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⣰⡿⠟⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠻⣦⡀⢸⠁⠀⢀⣴⠋⠀⢻⠉⠉⠉⠀⠀⠀⠀⠀⠀⣀⡴⠚⠁⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⢤⣖⣛⡓⠂⠴⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠙⠓⠚⠉⠀⠀⢠⡈⡇⠀⠀⠀⠀⠀⠀⠀⠀⢀⣹⠶⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⣰⠋⠀⠀⠈⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⣿⣿⣄⠀⠀⠀⢳⡒⠒⠋⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⢰⢇⡴⠀⠀⠀⢱⣠⣏⠀⠀⠀⠀⠀⠀⢀⡞⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢸⡿⠯⢿⠉⠛⠒⠒⠿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⣿⡟⠀⠀⠀⠀⠈⠟⠈⢦⡀⠀⣦⠀⢀⡞⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠃⠀⠀⠀⠀⠀⠀⠀⢀⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⣼⠁⠀⠀⠀⠀⠀⠀⠀⠀⠙⠢⣿⡷⢾⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣾⠀⠀⠀⠀⠀⠀⠀⡋⠁⢘⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⢰⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠁⢸⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡇⠀⠀⠀⠀⠀⠀⠀⠙⠒⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⣼⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⢀⡏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣾⣇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+
+Artiste inconnu(e) :(
+Send me a screenshot of this page (on Telegram t.me/jamblondletaidum or @jamblondletaidum on Discord) if you find this easter-egg :3c
+
+-->
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <!-- Google Tag / Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-95DP4EBMR0"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-95DP4EBMR0');
+  </script>
+  <!-- Google Tag Manager -->
+  <script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
+      var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+      j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+      f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WZNZV664');
+  </script>
+  <!-- End Google Tag Manager -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Milaverus - VF</title>
+  <meta name="title" content="Milaverus - VF">
+  <meta name="description" content="Milaverus - Webcomic BL traduit en français. Milaverus FR">
+  <meta name="keywords" content="Milaverus episode fr, Milaverus vf, Milaverus VF, boo be mine fr, Milaverus FR, webcomic, BL, boys love, yaoi, traduction française, Milaverus">
+  <meta name="author" content="Traduction FR par Jamblond">
+  <meta name="google-site-verification" content="3GxjPGAGHaLLzcVS1SjaMYpScBbQt4d5AQKgSQW0VI0" />
+  <meta property="og:title" content="Milaverus - VF">
+  <meta property="og:site_name" content="Milaverus VF">
+  <meta property="og:description" content="Milaverus - Webcomic BL par Pakopop traduit en français. Milaverus FR">
+  <meta property="og:image" content="favsky.svg">
+  <meta property="og:url" content="https://boobemine.fr">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Milaverus - FR">
+  <meta name="twitter:description" content="Milaverus - Webcomic BL par Pakopop traduit en français. Milaverus FR">
+  <meta name="twitter:image" content="favsky.svg">
+  <link rel="canonical" href="Jamblond.github.io/Milaverus VF">
+
+  <!-- Favicon / Apple icons -->
+  <link rel="icon" href="favsky.svg" type="image/svg+xml">
+  <link rel="icon" sizes="16x16" href="favsky-16x16.png">
+  <link rel="icon" sizes="32x32" href="favsky-32x32.png">
+  <link rel="icon" sizes="48x48" href="favsky-48x48.png">
+  <link rel="icon" sizes="64x64" href="favsky-64x64.png">
+  <link rel="icon" sizes="96x96" href="favsky-96x96.png">
+  <link rel="icon" sizes="128x128" href="favsky-128x128.png">
+  <link rel="icon" sizes="256x256" href="favsky-256x256.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favsky-180x180.png">
+
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- CSS global -->
+  <link rel="stylesheet" href="base.css" />
+
+  <!-- Thème -->
+  <link rel="stylesheet" href="theme-neon.css" />
+  <style>
+    #viewer img { display: block; }
+    #viewer img.polaroid { margin-bottom: 24px; }
+    #viewer img.page { margin-bottom: 0; }
+  </style>
+</head>
+
+
+<!-- "neon" / "halloween" / "noel" / "snownoel" / "valentin" / -->
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WZNZV664"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <div style="display:none;">Milaverus vf Milaverus fr</div>
+
+  <header>
+    <div class="header-inner">
+      <div class="brand"><h1>Milaverus - VF</h1></div>
+      <nav>
+        <a href="https://milaverus.itch.io/" target="_blank">itch.io (VO)</a>
+        <br><br><a href="https://jamblond.mcwrite.net" target="_blank">Autres Comics</a>
+      </nav>
+      <div class="subnote">
+        Traduction VF par <a href="https://t.me/jamblondletaidum" target="_blank"><font color="orange"><b>Jamblond</b></font></a> — <a href="https://discord.gg/vGHzaUHUuF" target="_blank">Discord</a>.
+      </div>
+    </div>
+  </header>
+<!-- <div style="text-align: center;"><img src="Annonce_Jamblond.png" width="300" height="200" alt="Annonce de Jamblond" class="responsive"></div> -->
+  <main id="main-content">
+    <section id="seasons-root"></section>
+    <section id="viewer" class="viewer"></section>
+  </main>
+
+  <footer><small>© 2025–2027 CuterKisser. Tous droits réservés. Template utilisé sous licence personnelle accordée uniquement à Jamblond.</small></footer>
+
+  <script src="episodeshd.js"></script>
+
+  <script>
+    const headerEl=document.querySelector('header');
+    const seasonsRoot=document.getElementById('seasons-root');
+    const viewer=document.getElementById('viewer');
+
+    const seasons=[];let bucket=[];
+    const isSeasonMarker=ep=>ep&&ep.disabled&&typeof ep.text==='string'&&ep.text.toLowerCase().includes('saison');
+    const cleanTitle=t=>t.replace(/[/\\]/g,'').trim();
+    for(const ep of episodes){ if(isSeasonMarker(ep)){ seasons.push({title:cleanTitle(ep.text),episodes:bucket}); bucket=[]; } else bucket.push(ep); }
+    if(bucket.length)seasons.push({title:'Hors-série',episodes:bucket});
+    const seasonsOrdered=seasons.filter(s=>(s.episodes||[]).some(e=>e&&e.url));
+
+    const flatEpisodes=[],seasonNodes=[],polaroidMap={};
+
+    function createSeason(title,eps){
+      const wrap=document.createElement('section'); wrap.className='season';
+      const header=document.createElement('div'); header.className='season-header'; header.textContent=title;
+      const body=document.createElement('div'); body.className='season-body';
+      const grid=document.createElement('div'); grid.className='episodes-grid'; body.appendChild(grid);
+
+      eps.forEach(ep=>{
+        if(!ep||!ep.url) return;
+        const val=ep.value||''; const num=(val.match(/(\d+)/)||[])[1]||'';
+
+        if(/polaroid/i.test(val)||/polaroid/i.test(ep.text)||/polaroid/i.test(ep.url)){
+          if(num) polaroidMap[num]=ep;
+          return;
+        }
+
+        flatEpisodes.push(ep);
+
+        const card=document.createElement('button'); card.className='episode-card'; card.setAttribute('data-ep', ep.value);
+        const number=document.createElement('div'); number.className='ep-number'; number.textContent=num;
+        const img=document.createElement('img'); img.className='episode-img'; img.src=ep.preview||'favsky-256x256.png';
+        img.onerror=()=>{ img.src='favsky-256x256.png'; img.style.objectFit='contain'; img.style.padding='24px'; img.style.background='transparent'; };
+        const titleDiv=document.createElement('div'); titleDiv.className='episode-title'; titleDiv.textContent=ep.text;
+
+        card.appendChild(number);
+        card.appendChild(img);
+        card.appendChild(titleDiv);
+        grid.appendChild(card);
+      });
+
+      header.onclick=()=>wrap.classList.toggle('open');
+      wrap.appendChild(header); wrap.appendChild(body);
+      return {wrap,grid,header,episodes:eps};
+    }
+
+    seasonsOrdered.forEach(season=>{
+      const {wrap,grid,header,episodes}=createSeason(season.title,season.episodes);
+      seasonsRoot.appendChild(wrap); seasonNodes.push({wrap,header,title:season.title,episodes});
+    });
+
+    // Open the last season
+    // const maxSeason=seasonNodes.reduce((a,s)=>{ const n=parseInt((s.title.match(/\d+/)||[-Infinity])[0]); return (n>a.n)?{n,node:s}:a; }, {n:-Infinity,node:null});
+    // seasonNodes.forEach(s=>s.wrap.classList.remove('open'));
+    // if(maxSeason.node) maxSeason.node.wrap.classList.add('open'); else if(seasonNodes[0]) seasonNodes[0].wrap.classList.add('open');
+
+    // Close all
+    seasonNodes.forEach(s => s.wrap.classList.remove('open'));
+
+
+    let currentIndex=-1,lastActiveCard=null;
+    function setActiveByIndex(index){
+      if(lastActiveCard) lastActiveCard.classList.remove('active');
+      const ep=flatEpisodes[index]; if(!ep) return;
+      const card=seasonsRoot.querySelector(`.episode-card[data-ep="${CSS.escape(ep.value)}"]`);
+      if(card){ card.classList.add('active'); lastActiveCard=card; }
+    }
+
+    function scrollViewerToTop(){
+      const h=headerEl?.offsetHeight||0;
+      window.scrollTo({ top: viewer.getBoundingClientRect().top + window.scrollY - (h+6), behavior:'smooth' });
+    }
+
+    function showEpisodeByIndex(index){
+      if(index<0||index>=flatEpisodes.length) return;
+      const ep = flatEpisodes[index];
+      currentIndex = index;
+      setActiveByIndex(index);
+
+      viewer.innerHTML = '';
+
+      const loading = document.createElement('div');
+      loading.className = 'loading';
+      loading.textContent = 'Veuillez patienter le temps du chargement…';
+      viewer.appendChild(loading);
+
+      viewer.classList.add('show');
+
+      const epNum = (ep.value.match(/(\d+)/)||[])[1];
+      let urls = [];
+      if (epNum && polaroidMap[epNum]) urls.push(polaroidMap[epNum].url);
+      if (ep.multi) urls = urls.concat(ep.url); else urls.push(ep.url);
+
+      let loaded = 0, failed = 0;
+      urls.forEach(src => {
+        const im = new Image();
+        im.onload = onDone;
+        im.onerror = () => { failed++; onDone(); };
+        im.src = src;
+      });
+
+      function onDone(){
+        loaded++;
+        if (loaded === urls.length){
+          viewer.innerHTML = '';
+          if (failed === urls.length){
+            const err = document.createElement('div');
+            err.className = 'error-msg';
+            err.textContent = 'Épisode non disponible';
+            viewer.appendChild(err);
+          } else {
+            const polaroidSrc = (epNum && polaroidMap[epNum]) ? polaroidMap[epNum].url : null;
+
+            urls.forEach((src,i) => {
+              const tag = document.createElement('img');
+              tag.src = src;
+              tag.style.animationDelay = `${i*0.3}s`;
+              tag.onerror = () => tag.remove();
+
+              // Marque le polaroid pour lui laisser une marge, colle les pages entre elles
+              if (polaroidSrc && src === polaroidSrc) {
+                tag.className = 'polaroid'; // a une marge-bottom (via CSS)
+              } else {
+                tag.className = 'page';     // aucune marge entre pages
+              }
+
+              viewer.appendChild(tag);
+            });
+          }
+          renderNav();
+          viewer.classList.add('show');
+          scrollViewerToTop();
+        }
+      }
+    }
+
+    function renderNav(){
+      const nav=document.createElement('div'); nav.className='ep-nav';
+      const prev=document.createElement('button'); prev.className='ep-btn'; prev.textContent='◀ Épisode précédent';
+      prev.disabled=(currentIndex>=flatEpisodes.length-1); prev.onclick=()=>showEpisodeByIndex(currentIndex+1);
+      const next=document.createElement('button'); next.className='ep-btn'; next.textContent='Épisode suivant ▶';
+      next.disabled=(currentIndex<=0); next.onclick=()=>showEpisodeByIndex(currentIndex-1);
+      nav.appendChild(prev); nav.appendChild(next); viewer.appendChild(nav);
+    }
+
+    seasonsRoot.addEventListener('click',e=>{
+      const card=e.target.closest('.episode-card'); if(!card) return;
+      const val=card.getAttribute('data-ep'); const idx=flatEpisodes.findIndex(ep=>ep.value===val);
+      if(idx!==-1) showEpisodeByIndex(idx);
+    });
+
+    // function getRequestedEpisodeNumber(){
+    //   const q=location.search, h=location.hash, p=location.pathname;
+    //   const m1=q.match(/[?&](?:ep|episode)=(\d{1,4})/i); if(m1) return m1[1];
+    //   const m2=h.match(/(\d{1,4})/); if(m2) return m2[1];
+    //   const m3=p.match(/polaroid(\d{1,4})/i); if(m3) return m3[1];
+    //   const m4=p.match(/(\d{1,4})(?!.*\d)/); if(m4) return m4[1];
+    //   const m5=String(location.href).match(/(\d{1,4})(?!.*\d)/); return m5?m5[1]:null;
+    // }
+
+    function getRequestedEpisodeNumber(){
+      const q = location.search;
+      const h = location.hash;
+
+      // ?ep=20 ou ?episode=20
+      const m1 = q.match(/[?&](?:ep|episode)=(\d{1,4})/i);
+      if (m1) return m1[1];
+
+      // #20 dans l'URL
+      const m2 = h.match(/(\d{1,4})/);
+      if (m2) return m2[1];
+
+      // Sinon, rien demandé
+      return null;
+    }
+
+    function findIndexByEpisodeNumber(numStr){
+      const num=String(numStr);
+      return flatEpisodes.findIndex(ep=>{
+        const val=ep.value||'', txt=ep.text||'';
+        return new RegExp(`(^|\\D)${num}(?=\\D|$)`).test(val)||new RegExp(`(^|\\D)${num}(?=\\D|$)`).test(txt);
+      });
+    }
+
+    // window.addEventListener('load',()=>{
+    //   const requested=getRequestedEpisodeNumber();
+    //   if(requested){
+    //     const idx=findIndexByEpisodeNumber(requested);
+    //     if(idx!==-1){ showEpisodeByIndex(idx); return; }
+    //   }
+    //   const eps=flatEpisodes; if(!eps.length) return;
+    //   const idx=eps.length-1; showEpisodeByIndex(idx);
+    // });
+
+    window.addEventListener('load', () => {
+      const requested = getRequestedEpisodeNumber();
+      if (requested) {
+        const idx = findIndexByEpisodeNumber(requested);
+        if (idx !== -1) {
+          showEpisodeByIndex(idx);
+          return;
+        }
+      }
+
+      const eps = flatEpisodes;
+      if (!eps.length) return;
+
+      const coverIdx = eps.findIndex(ep => ep.value === 'cover.png');
+
+      const idx = coverIdx !== -1 ? coverIdx : eps.length - 1;
+      showEpisodeByIndex(idx);
+    });
+
+    document.addEventListener('contextmenu', e => e.preventDefault());
+
+  </script>
+</body>
+</html>
