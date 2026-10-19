@@ -151,7 +151,7 @@ Send me a screenshot of this page (on Telegram t.me/jamblondletaidum or @jamblon
     const isSeasonMarker=ep=>ep&&ep.disabled&&typeof ep.text==='string'&&ep.text.toLowerCase().includes('saison');
     const cleanTitle=t=>t.replace(/[/\\]/g,'').trim();
     for(const ep of episodes){ if(isSeasonMarker(ep)){ seasons.push({title:cleanTitle(ep.text),episodes:bucket}); bucket=[]; } else bucket.push(ep); }
-    if(bucket.length)seasons.push({title:'Hors-série',episodes:bucket});
+    if(bucket.length)seasons.push({title:'Chapitre 1',episodes:bucket}); // Aslaue: remplacé "Hors série" par "Chapitre 1"
     const seasonsOrdered=seasons.filter(s=>(s.episodes||[]).some(e=>e&&e.url));
 
     const flatEpisodes=[],seasonNodes=[],polaroidMap={};
