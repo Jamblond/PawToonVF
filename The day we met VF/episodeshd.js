@@ -1,4 +1,6 @@
 const episodes = [
+        
+        { value: '', text: '/\\ Chapitre 1 /\\', description: 'The day we met Chapitre 1', disabled: true }, 
         {
         value: '017.png',
         text: "Chapitre 1 - page 17",
@@ -56,14 +58,6 @@ const episodes = [
         multi: false
     },
         {
-        value: '010.png',
-        text: "Chapitre 1 - page 10",
-        description: 'The day we met chaptre 1 page 10',
-        preview: '../day.png',
-        url: ['010.png'],
-        multi: false
-    },
-            {
         value: '010.png',
         text: "Chapitre 1 - page 10",
         description: 'The day we met chaptre 1 page 10',
