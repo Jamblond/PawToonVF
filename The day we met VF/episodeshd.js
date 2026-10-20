@@ -29,7 +29,7 @@ const episodes = [
         value: '014.png',
         text: "Chapitre 1 - page 14",
         description: 'The day we met chaptre 1 page 14',
-        preview: 'preview/014-previewpng',
+        preview: 'preview/014-preview.png',
         url: ['014.png'],
         multi: false
     },
