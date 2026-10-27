@@ -135,7 +135,7 @@ const episodes = [
     text: "page 4",
     description: 'The day we met chaptre 2 page 4',
     preview: '../day.png',
-    url: ['02-04.png'],
+    url: ['04.png'],
     multi: false
     },
     {
