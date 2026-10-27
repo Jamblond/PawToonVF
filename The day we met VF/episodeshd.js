@@ -155,11 +155,11 @@ const episodes = [
     multi: false
     },
         {
-    value: '02-01.png',
+    value: '02-01.jpg',
     text: "page 1",
     description: 'The day we met chaptre 2 page 1',
     preview: '../day.png',
-    url: ['02-01.png'],
+    url: ['02-01.jpg'],
     multi: false
     },
     { value: '', text: '/\\ Chapitre 2 /\\', description: 'The day we met Chapitre 2', disabled: true }, 
