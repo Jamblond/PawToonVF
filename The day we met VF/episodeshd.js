@@ -139,7 +139,7 @@ const episodes = [
     multi: false
     },
     {
-    value: '02-03.png',
+    value: '03.png',
     text: "page 3",
     description: 'The day we met chaptre 2 page 3',
     preview: '../day.png',
