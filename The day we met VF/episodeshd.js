@@ -3,7 +3,7 @@ const episodes = [
     
     { value: '', text: '/\\ Chapitre 2 /\\', description: 'The day we met Chapitre 2', disabled: true }, 
     {
-    value: '02-020.png',
+    value: '20.png',
     text: "page 20",
     description: 'The day we met chaptre 2 page 20',
     preview: '../day.png',
@@ -11,23 +11,23 @@ const episodes = [
     multi: false
     },
     {
-    value: '02-09.png',
+    value: '19.png',
     text: "page 19",
     description: 'The day we met chaptre 2 page 19',
     preview: '../day.png',
-    url: ['02-19.png'],
+    url: ['02-019.png'],
     multi: false
     },
     {
-    value: '02-08.png',
+    value: '18.png',
     text: "page 18",
     description: 'The day we met chaptre 2 page 18',
     preview: '../day.png',
-    url: ['02-18.png'],
+    url: ['02-018.png'],
     multi: false
     },
     {
-    value: '02-017.png',
+    value: '17.png',
     text: "page 17",
     description: 'The day we met chaptre 2 page 17',
     preview: '../day.png',
@@ -35,7 +35,7 @@ const episodes = [
     multi: false
     },
     {
-    value: '02-016.png',
+    value: '16.png',
     text: "page 16",
     description: 'The day we met chaptre 2 page 16',
     preview: '../day.png',
@@ -43,7 +43,7 @@ const episodes = [
     multi: false
     },
     {
-    value: '02-015.png',
+    value: '15.png',
     text: "page 15",
     description: 'The day we met chaptre 2 page 15',
     preview: '../day.png',
@@ -51,7 +51,7 @@ const episodes = [
     multi: false
     },
     {
-    value: '02-014.png',
+    value: '14.png',
     text: "page 14",
     description: 'The day we met chaptre 2 page 14',
     preview: '../day.png',
@@ -59,7 +59,7 @@ const episodes = [
     multi: false
     },
     {
-    value: '02-013.png',
+    value: '13.png',
     text: "page 13",
     description: 'The day we met chaptre 2 page 13',
     preview: '../day.png',
@@ -67,7 +67,7 @@ const episodes = [
     multi: false
     },
     {
-    value: '02-012.png',
+    value: '12.png',
     text: "page 12",
     description: 'The day we met chaptre 2 page 12',
     preview: '../day.png',
@@ -75,7 +75,7 @@ const episodes = [
     multi: false
     },
     {
-    value: '02-011.png',
+    value: '11.png',
     text: "page 11",
     description: 'The day we met chaptre 2 page 11',
     preview: '../day.png',
@@ -83,7 +83,7 @@ const episodes = [
     multi: false
     },
     {
-    value: '02-010.png',
+    value: '10.png',
     text: "page 10",
     description: 'The day we met chaptre 2 page 10',
     preview: '../day.png',
@@ -91,7 +91,7 @@ const episodes = [
     multi: false
     },
     {
-    value: '02-09.png',
+    value: '9.png',
     text: "page 9",
     description: 'The day we met chaptre 2 page 9',
     preview: '../day.png',
@@ -99,7 +99,7 @@ const episodes = [
     multi: false
     },
     {
-    value: '02-08.png',
+    value: '8.png',
     text: "page 8",
     description: 'The day we met chaptre 2 page 8',
     preview: '../day.png',
@@ -107,7 +107,7 @@ const episodes = [
     multi: false
     },
     {
-    value: '07.png',
+    value: '7.png',
     text: "page 7",
     description: 'The day we met chaptre 2 page 7',
     preview: '../day.png',
@@ -115,7 +115,7 @@ const episodes = [
     multi: false
     },
     {
-    value: '06.png',
+    value: '6.png',
     text: "page 6",
     description: 'The day we met chaptre 2 page 6',
     preview: '../day.png',
@@ -123,7 +123,7 @@ const episodes = [
     multi: false
     },
     {
-    value: '05.png',
+    value: '5.png',
     text: "page 5",
     description: 'The day we met chaptre 2 page 5',
     preview: '../day.png',
@@ -131,7 +131,7 @@ const episodes = [
     multi: false
     },
     {
-    value: '04.png',
+    value: '4.png',
     text: "page 4",
     description: 'The day we met chaptre 2 page 4',
     preview: '../day.png',
@@ -139,7 +139,7 @@ const episodes = [
     multi: false
     },
     {
-    value: '03.png',
+    value: '3.png',
     text: "page 3",
     description: 'The day we met chaptre 2 page 3',
     preview: '../day.png',
@@ -147,7 +147,7 @@ const episodes = [
     multi: false
     },
     {
-    value: '02-02.png',
+    value: '2.png',
     text: "page 2",
     description: 'The day we met chaptre 2 page 2',
     preview: '../day.png',
@@ -155,7 +155,7 @@ const episodes = [
     multi: false
     },
         {
-    value: '01.jpg',
+    value: '1.jpg',
     text: "page 1",
     description: 'The day we met chaptre 2 page 1',
     preview: '../day.png',
