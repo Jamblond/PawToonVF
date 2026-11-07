@@ -1,7 +1,7 @@
 const episodes = [
+    //{ value: '', text: '/\\ Saison 3 /\\', description: 'The day we met Chapitre 2', disabled: true }, 
     
     
-    { value: '', text: '/\\ Chapitre 2 /\\', description: 'The day we met Chapitre 2', disabled: true }, 
     {
     value: '20.png',
     text: "page 20",
