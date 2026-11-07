@@ -162,7 +162,7 @@ const episodes = [
     url: ['02-01.jpg'],
     multi: false
     },
-    { value: '', text: '/\\ Chapitre 2 /\\', description: 'The day we met Chapitre 2', disabled: true }, 
+    { value: '', text: '/\\ Saison 2 /\\', description: 'The day we met Chapitre 2', disabled: true }, 
     
     
     {
@@ -301,5 +301,5 @@ const episodes = [
     url: ['01.png'],
     multi: false
     },
-    { value: '', text: '/\\ Chapitre 1 /\\', description: 'The day we met Chapitre 1', disabled: true }, 
+    { value: '', text: '/\\ Saison 1 /\\', description: 'The day we met Chapitre 1', disabled: true }, 
 ];
