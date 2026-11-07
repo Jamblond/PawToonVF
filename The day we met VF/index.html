@@ -144,7 +144,8 @@ Send me a screenshot of this page (on Telegram t.me/jamblondletaidum or @jamblon
     const viewer=document.getElementById('viewer');
 
     const seasons=[];let bucket=[];
-    const isSeasonMarker=ep=>ep&&ep.disabled&&typeof ep.text==='string'&&ep.text.toLowerCase().includes('saison');
+    const isSeasonMarker=ep=>ep&&ep.disabled&&typeof ep.text==='string'&&ep.text.toLowerCase().includes('chapitre');
+    //const isSeasonMarker=ep=>ep&&ep.disabled&&typeof ep.text==='string'&&ep.text.toLowerCase().includes('saison');
     const cleanTitle=t=>t.replace(/[/\\]/g,'').trim();
     for(const ep of episodes){ if(isSeasonMarker(ep)){ seasons.push({title:cleanTitle(ep.text),episodes:bucket}); bucket=[]; } else bucket.push(ep); }
     if(bucket.length)seasons.push({title:'Chapitre 1',episodes:bucket}); // Aslaue remplacé Hors-Série par Chapitre 1
