@@ -1,7 +1,78 @@
 const episodes = [
     //{ value: '', text: '/\\ Saison 3 /\\', description: 'The day we met Chapitre 2', disabled: true }, 
     
-    
+    {
+    value: '29.png',
+    text: "page 29",
+    description: 'The day we met chaptre 2 page 29',
+    preview: '../day.png',
+    url: ['02-029.png'],
+    multi: false
+    },
+    {
+    value: '28.png',
+    text: "page 28",
+    description: 'The day we met chaptre 2 page 28',
+    preview: '../day.png',
+    url: ['02-028.png'],
+    multi: false
+    },
+    {
+    value: '27.png',
+    text: "page 27",
+    description: 'The day we met chaptre 2 page 27',
+    preview: '../day.png',
+    url: ['02-027.png'],
+    multi: false
+    },
+    {
+    value: '26.png',
+    text: "page 26",
+    description: 'The day we met chaptre 2 page 26',
+    preview: '../day.png',
+    url: ['02-026.png'],
+    multi: false
+    },
+    {
+    value: '25.png',
+    text: "page 25",
+    description: 'The day we met chaptre 2 page 25',
+    preview: '../day.png',
+    url: ['02-025.png'],
+    multi: false
+    },
+    // {
+    // value: '24.png',
+    // text: "page 24",
+    // description: 'The day we met chaptre 2 page 24',
+    // preview: '../day.png',
+    // url: ['02-024.png'],
+    // multi: false
+    // },
+    // {
+    // value: '23.png',
+    // text: "page 23",
+    // description: 'The day we met chaptre 2 page 23',
+    // preview: '../day.png',
+    // url: ['02-023.png'],
+    // multi: false
+    // },
+    // {
+    // value: '22.png',
+    // text: "page 22",
+    // description: 'The day we met chaptre 2 page 22',
+    // preview: '../day.png',
+    // url: ['02-022.png'],
+    // multi: false
+    // },
+    // {
+    // value: '21.png',
+    // text: "page 21",
+    // description: 'The day we met chaptre 2 page 21',
+    // preview: '../day.png',
+    // url: ['02-021.png'],
+    // multi: false
+    // },    
     {
     value: '20.png',
     text: "page 20",
