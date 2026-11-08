@@ -3,232 +3,232 @@ const episodes = [
     
     {
     value: '29.png',
-    text: "page 29",
-    description: 'The day we met chaptre 2 page 29',
+    text: "Page 29",
+    description: 'The day we met chaptre 2 Page 29',
     preview: '../day.png',
-    url: ['02-029.png'],
+    url: ['02-29.png'],
     multi: false
     },
     {
     value: '28.png',
-    text: "page 28",
-    description: 'The day we met chaptre 2 page 28',
+    text: "Page 28",
+    description: 'The day we met chaptre 2 Page 28',
     preview: '../day.png',
-    url: ['02-028.png'],
+    url: ['02-28.png'],
     multi: false
     },
     {
     value: '27.png',
-    text: "page 27",
-    description: 'The day we met chaptre 2 page 27',
+    text: "Page 27",
+    description: 'The day we met chaptre 2 Page 27',
     preview: '../day.png',
-    url: ['02-027.png'],
+    url: ['02-27.png'],
     multi: false
     },
     {
     value: '26.png',
-    text: "page 26",
-    description: 'The day we met chaptre 2 page 26',
+    text: "Page 26",
+    description: 'The day we met chaptre 2 Page 26',
     preview: '../day.png',
-    url: ['02-026.png'],
+    url: ['02-26.png'],
     multi: false
     },
     {
     value: '25.png',
-    text: "page 25",
-    description: 'The day we met chaptre 2 page 25',
+    text: "Page 25",
+    description: 'The day we met chaptre 2 Page 25',
     preview: '../day.png',
-    url: ['02-025.png'],
+    url: ['02-25.png'],
+    multi: false
+    },
+    {
+    value: '24.png',
+    text: "Page 24",
+    description: 'The day we met chaptre 2 Page 24',
+    preview: '../day.png',
+    url: ['02-24.png'],
+    multi: false
+     },
+    {
+    value: '23.png',
+    text: "Page 23",
+    description: 'The day we met chaptre 2 Page 23',
+    preview: '../day.png',
+    url: ['02-23.png'],
+    multi: false
+    },
+    {
+    value: '22.png',
+    text: "Page 22",
+    description: 'The day we met chaptre 2 Page 22',
+    preview: '../day.png',
+    url: ['02-22.png'],
     multi: false
     },
     // {
-    // value: '24.png',
-    // text: "page 24",
-    // description: 'The day we met chaptre 2 page 24',
-    // preview: '../day.png',
-    // url: ['02-024.png'],
-    // multi: false
-    // },
-    // {
-    // value: '23.png',
-    // text: "page 23",
-    // description: 'The day we met chaptre 2 page 23',
-    // preview: '../day.png',
-    // url: ['02-023.png'],
-    // multi: false
-    // },
-    // {
-    // value: '22.png',
-    // text: "page 22",
-    // description: 'The day we met chaptre 2 page 22',
-    // preview: '../day.png',
-    // url: ['02-022.png'],
-    // multi: false
-    // },
-    // {
     // value: '21.png',
-    // text: "page 21",
-    // description: 'The day we met chaptre 2 page 21',
+    // text: "Page 21",
+    // description: 'The day we met chaptre 2 Page 21',
     // preview: '../day.png',
-    // url: ['02-021.png'],
+    // url: ['02-21.png'],
     // multi: false
     // },    
     {
     value: '20.png',
-    text: "page 20",
-    description: 'The day we met chaptre 2 page 20',
+    text: "Page 20",
+    description: 'The day we met chaptre 2 Page 20',
     preview: '../day.png',
     url: ['02-020.png'],
     multi: false
     },
     {
     value: '19.png',
-    text: "page 19",
-    description: 'The day we met chaptre 2 page 19',
+    text: "Page 19",
+    description: 'The day we met chaptre 2 Page 19',
     preview: '../day.png',
     url: ['02-019.png'],
     multi: false
     },
     {
     value: '18.png',
-    text: "page 18",
-    description: 'The day we met chaptre 2 page 18',
+    text: "Page 18",
+    description: 'The day we met chaptre 2 Page 18',
     preview: '../day.png',
     url: ['02-018.png'],
     multi: false
     },
     {
     value: '17.png',
-    text: "page 17",
-    description: 'The day we met chaptre 2 page 17',
+    text: "Page 17",
+    description: 'The day we met chaptre 2 Page 17',
     preview: '../day.png',
     url: ['02-017.png'],
     multi: false
     },
     {
     value: '16.png',
-    text: "page 16",
-    description: 'The day we met chaptre 2 page 16',
+    text: "Page 16",
+    description: 'The day we met chaptre 2 Page 16',
     preview: '../day.png',
     url: ['02-016.png'],
     multi: false
     },
     {
     value: '15.png',
-    text: "page 15",
-    description: 'The day we met chaptre 2 page 15',
+    text: "Page 15",
+    description: 'The day we met chaptre 2 Page 15',
     preview: '../day.png',
     url: ['02-015.png'],
     multi: false
     },
     {
     value: '14.png',
-    text: "page 14",
-    description: 'The day we met chaptre 2 page 14',
+    text: "Page 14",
+    description: 'The day we met chaptre 2 Page 14',
     preview: '../day.png',
     url: ['02-014.png'],
     multi: false
     },
     {
     value: '13.png',
-    text: "page 13",
-    description: 'The day we met chaptre 2 page 13',
+    text: "Page 13",
+    description: 'The day we met chaptre 2 Page 13',
     preview: '../day.png',
     url: ['02-013.png'],
     multi: false
     },
     {
     value: '12.png',
-    text: "page 12",
-    description: 'The day we met chaptre 2 page 12',
+    text: "Page 12",
+    description: 'The day we met chaptre 2 Page 12',
     preview: '../day.png',
     url: ['02-012.png'],
     multi: false
     },
     {
     value: '11.png',
-    text: "page 11",
-    description: 'The day we met chaptre 2 page 11',
+    text: "Page 11",
+    description: 'The day we met chaptre 2 Page 11',
     preview: '../day.png',
     url: ['02-011.png'],
     multi: false
     },
     {
     value: '10.png',
-    text: "page 10",
-    description: 'The day we met chaptre 2 page 10',
+    text: "Page 10",
+    description: 'The day we met chaptre 2 Page 10',
     preview: '../day.png',
     url: ['02-010.png'],
     multi: false
     },
     {
     value: '9.png',
-    text: "page 9",
-    description: 'The day we met chaptre 2 page 9',
+    text: "Page 9",
+    description: 'The day we met chaptre 2 Page 9',
     preview: '../day.png',
     url: ['02-09.png'],
     multi: false
     },
     {
     value: '8.png',
-    text: "page 8",
-    description: 'The day we met chaptre 2 page 8',
+    text: "Page 8",
+    description: 'The day we met chaptre 2 Page 8',
     preview: '../day.png',
     url: ['02-08.png'],
     multi: false
     },
     {
     value: '7.png',
-    text: "page 7",
-    description: 'The day we met chaptre 2 page 7',
+    text: "Page 7",
+    description: 'The day we met chaptre 2 Page 7',
     preview: '../day.png',
     url: ['02-07.png'],
     multi: false
     },
     {
     value: '6.png',
-    text: "page 6",
-    description: 'The day we met chaptre 2 page 6',
+    text: "Page 6",
+    description: 'The day we met chaptre 2 Page 6',
     preview: '../day.png',
     url: ['02-06.png'],
     multi: false
     },
     {
     value: '5.png',
-    text: "page 5",
-    description: 'The day we met chaptre 2 page 5',
+    text: "Page 5",
+    description: 'The day we met chaptre 2 Page 5',
     preview: '../day.png',
     url: ['02-05.png'],
     multi: false
     },
     {
     value: '4.png',
-    text: "page 4",
-    description: 'The day we met chaptre 2 page 4',
+    text: "Page 4",
+    description: 'The day we met chaptre 2 Page 4',
     preview: '../day.png',
     url: ['02-04.png'],
     multi: false
     },
     {
     value: '3.png',
-    text: "page 3",
-    description: 'The day we met chaptre 2 page 3',
+    text: "Page 3",
+    description: 'The day we met chaptre 2 Page 3',
     preview: '../day.png',
     url: ['02-03.png'],
     multi: false
     },
     {
     value: '2.png',
-    text: "page 2",
-    description: 'The day we met chaptre 2 page 2',
+    text: "Page 2",
+    description: 'The day we met chaptre 2 Page 2',
     preview: '../day.png',
     url: ['02-02.png'],
     multi: false
     },
         {
     value: '1.jpg',
-    text: "page 1",
-    description: 'The day we met chaptre 2 page 1',
+    text: "Page 1",
+    description: 'The day we met chaptre 2 Page 1',
     preview: '../day.png',
     url: ['02-01.jpg'],
     multi: false
@@ -239,136 +239,136 @@ const episodes = [
     
     {
     value: '017.png',
-    text: "page 17",
-    description: 'The day we met chaptre 1 page 17',
+    text: "Page 17",
+    description: 'The day we met chaptre 1 Page 17',
     preview: 'preview/017-preview.png',
     url: ['017.png'],
     multi: false
     },
     {
     value: '016.png',
-    text: "page 16",
-    description: 'The day we met chaptre 1 page 16',
+    text: "Page 16",
+    description: 'The day we met chaptre 1 Page 16',
     preview: 'preview/016-preview.png',
     url: ['016.png'],
     multi: false
     },
     {
     value: '015.png',
-    text: "page 15",
-    description: 'The day we met chaptre 1 page 15',
+    text: "Page 15",
+    description: 'The day we met chaptre 1 Page 15',
     preview: 'preview/015-preview.png',
     url: ['015.png'],
     multi: false
     },
     {
     value: '014.png',
-    text: "page 14",
-    description: 'The day we met chaptre 1 page 14',
+    text: "Page 14",
+    description: 'The day we met chaptre 1 Page 14',
     preview: 'preview/014-preview.png',
     url: ['014.png'],
     multi: false
     },
     {
     value: '013.png',
-    text: "page 13",
-    description: 'The day we met chaptre 1 page 13',
+    text: "Page 13",
+    description: 'The day we met chaptre 1 Page 13',
     preview: 'preview/013-preview.png',
     url: ['013.png'],
     multi: false
     },
     {
     value: '012.png',
-    text: "page 12",
-    description: 'The day we met chaptre 1 page 12',
+    text: "Page 12",
+    description: 'The day we met chaptre 1 Page 12',
     preview: 'preview/012-preview.png',
     url: ['012.png'],
     multi: false
     },
     {
     value: '011.png',
-    text: "page 11",
-    description: 'The day we met chaptre 1 page 11',
+    text: "Page 11",
+    description: 'The day we met chaptre 1 Page 11',
     preview: 'preview/011-preview.png',
     url: ['011.png'],
     multi: false
     },
     {
     value: '010.png',
-    text: "page 10",
-    description: 'The day we met chaptre 1 page 10',
+    text: "Page 10",
+    description: 'The day we met chaptre 1 Page 10',
     preview: 'preview/010-preview.png',
     url: ['010.png'],
     multi: false
     },
     {
     value: '09.png',
-    text: "page 9",
-    description: 'The day we met chaptre 1 page 9',
+    text: "Page 9",
+    description: 'The day we met chaptre 1 Page 9',
     preview: 'preview/09-preview.png',
     url: ['09.png'],
     multi: false
     },
     {
     value: '08.png',
-    text: "page 8",
-    description: 'The day we met chaptre 1 page 8',
+    text: "Page 8",
+    description: 'The day we met chaptre 1 Page 8',
     preview: 'preview/08-preview.png',
     url: ['08.png'],
     multi: false
     },
     {
     value: '07.png',
-    text: "page 7",
-    description: 'The day we met chaptre 1 page 7',
+    text: "Page 7",
+    description: 'The day we met chaptre 1 Page 7',
     preview: 'preview/07-preview.png',
     url: ['07.png'],
     multi: false
     },
     {
     value: '06.png',
-    text: "page 6",
-    description: 'The day we met chaptre 1 page 6',
+    text: "Page 6",
+    description: 'The day we met chaptre 1 Page 6',
     preview: 'preview/06-preview.png',
     url: ['06.png'],
     multi: false
     },
     {
     value: '05.png',
-    text: "page 5",
-    description: 'The day we met chaptre 1 page 5',
+    text: "Page 5",
+    description: 'The day we met chaptre 1 Page 5',
     preview: 'preview/05-preview.png',
     url: ['05.png'],
     multi: false
     },
     {
     value: '04.png',
-    text: "page 4",
-    description: 'The day we met chaptre 1 page 4',
+    text: "Page 4",
+    description: 'The day we met chaptre 1 Page 4',
     preview: 'preview/04-preview.png',
     url: ['04.png'],
     multi: false
     },
     {
     value: '03.png',
-    text: "page 3",
-    description: 'The day we met chaptre 1 page 3',
+    text: "Page 3",
+    description: 'The day we met chaptre 1 Page 3',
     preview: 'preview/03-preview.png',
     url: ['03.png'],
     multi: false
     },
     {
     value: '02.png',
-    text: "page 2",
-    description: 'The day we met chaptre 1 page 2',
+    text: "Page 2",
+    description: 'The day we met chaptre 1 Page 2',
     preview: 'preview/02-preview.png',
     url: ['02.png'],
     multi: false
     },
         {
     value: '01.png',
-    text: "page 1",
-    description: 'The day we met chaptre 1 page 1',
+    text: "Page 1",
+    description: 'The day we met chaptre 1 Page 1',
     preview: 'preview/01-preview.png',
     url: ['01.png'],
     multi: false
