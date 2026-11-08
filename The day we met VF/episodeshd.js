@@ -57,22 +57,22 @@ const episodes = [
     url: ['02-23.png'],
     multi: false
     },
-    {
-    value: '22.png',
-    text: "Page 22",
-    description: 'The day we met chaptre 2 Page 22',
-    preview: '../day.png',
-    url: ['02-22.png'],
-    multi: false
-    },
     // {
-    // value: '21.png',
-    // text: "Page 21",
-    // description: 'The day we met chaptre 2 Page 21',
+    // value: '22.png',
+    // text: "Page 22",
+    // description: 'The day we met chaptre 2 Page 22',
     // preview: '../day.png',
-    // url: ['02-21.png'],
+    // url: ['02-22.png'],
     // multi: false
-    // },    
+    // },
+    {
+    value: '21.png',
+    text: "Page 21",
+    description: 'The day we met chaptre 2 Page 21',
+    preview: '../day.png',
+    url: ['02-21.png'],
+    multi: false
+    },    
     {
     value: '20.png',
     text: "Page 20",
